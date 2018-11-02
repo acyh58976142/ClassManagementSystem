@@ -1,0 +1,115 @@
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 0 18px;
+  /*  &::after {
+      content: "";
+      position: absolute;
+      bottom: 16px;
+      left: 0;
+      width: 798px;
+      height: 12px;
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+      z-index: 5;
+    }*/
+}
+.main-navigation ul {
+  list-style: none;
+  padding: 0;
+}
+.main-navigation li {
+  float: left;
+  width: 170px;
+  height: 65px;
+  margin: 0 0 0 -2rem;
+  position: relative;
+}
+.main-navigation li.active {
+  z-index: 9;
+}
+.main-navigation a:hover {
+  background-color: transparent !important;
+}
+.main-navigation a:focus {
+  background-color: transparent !important;
+}
+.main-navigation a {
+  position: relative;
+  display: inline-block;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.main-navigation svg {
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  stroke:white;
+}
+.main-navigation li.active svg{
+	fill:url(#tab-4-bg);
+}
+.main-navigation li.active span{
+  color: #fff;
+}
+.main-navigation span {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size:15px;
+  color:rgba(68, 68, 68, 0.54);
+  text-shadow:0 1px 0 rgba(68, 68, 68, 0.87);
+  text-align: center;
+}
+.main-navigation .tab-1 {
+  z-index: 8;
+}
+.main-navigation .tab-1 svg {
+  fill: url(#tab-1-bg);
+}
+.main-navigation .tab-2 {
+  z-index: 7;
+}
+.main-navigation .tab-2 svg {
+  fill: url(#tab-1-bg);
+}
+.main-navigation .tab-3 {
+  z-index: 6;
+}
+.main-navigation .tab-3 svg {
+  fill: url(#tab-1-bg);
+}
+.main-navigation .tab-4 {
+  z-index: 5;
+}
+.main-navigation .tab-4 svg {
+  fill: url(#tab-1-bg);
+}
+.main-navigation .tab-5 {
+  z-index: 4;
+}
+.main-navigation .tab-5 svg {
+  fill: url(#tab-1-bg);
+}
+.main-navigation .tab-6 {
+  z-index: 3;
+}
+.main-navigation .tab-6 svg {
+  fill: url(#tab-1-bg);
+}
+.tab-content{
+	margin:-1.6rem 0 0 0 !important;
+}

@@ -1,0 +1,10 @@
+body, html { font-size: 100%; 	padding: 0; margin: 0;}
+
+body{
+	background-image: url(../../img/bpic7456.jpg);
+	background-size: cover;
+	color: #D5D6E2;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+}

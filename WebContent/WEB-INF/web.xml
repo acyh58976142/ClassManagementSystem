@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>hello</display-name>
+  <filter>
+    <filter-name>AFilter</filter-name>
+    <filter-class>cn.kgc.filter.AFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.kgc.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/client/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BeanServlet</display-name>
+    <servlet-name>BeanServlet</servlet-name>
+    <servlet-class>cn.kgc.servlet.BeanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BeanServlet</servlet-name>
+    <url-pattern>/BeanServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UserInfoServlet</servlet-name>
+    <servlet-class>cn.kgc.servlet.UserInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserInfoServlet</servlet-name>
+    <url-pattern>/client/UserInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>HomeworkServlet</servlet-name>
+    <servlet-class>cn.kgc.servlet.HomeworkServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeworkServlet</servlet-name>
+    <url-pattern>/HomeworkServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
